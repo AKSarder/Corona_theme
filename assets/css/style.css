@@ -1,0 +1,1079 @@
+/*
+  Theme Name: Name - Corona Theme
+  Author: Md Abulkalam Sarder
+  Support: 
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+
+*/
+
+/*===========================
+    1. Theme default css 
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+**{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.img {
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a{
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+span,
+a {
+	display: inline-block;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #4f658e;
+	margin-top: 0px;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #444444;
+	margin-bottom: 0px;
+}
+
+.bg_cover {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+/* =============================
+	ALL BUTTON STYLE IS HERE
+===============================*/
+
+.theme_btn {
+	display: inline-block;
+	padding: 20px;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #ffffff;
+	background: #a12dd6;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: 400;
+	line-height: 1;
+	border: 1px solid transparent;
+	position: relative;
+	overflow: hidden;
+    transition: all .3s linear;
+}
+
+.theme_btn::before {
+	position: absolute;
+	content: '';
+	left: -20px;
+	top: -96px;
+	width: 250px;
+	height: 250px;
+	background: #fff;
+	border-radius: 50%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+
+.theme_btn span {
+	position: relative;
+	z-index: 99;
+}
+
+.theme_btn:hover:before {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.theme_btn:hover {
+	border-color: #a12dd6;
+	color: #a12dd6;
+	background: transparent;
+}
+
+
+/* ==================================
+	ALL SECTION TITLE STYLE IS HERE
+=====================================*/
+
+.section_title {}
+
+.section_title h4 {
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #444444;
+	margin-bottom: 0;
+}
+
+.section_title h3 {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.indexTwo .section_title h4,
+.indexTwo .section_title h3 {
+	color: #ffffff;
+}
+
+/*===========================
+    2.HEADER CSS
+===========================*/
+
+#header-part {}
+
+.navbar{
+    
+}
+
+.navbar-brand{
+    
+}
+.navbar-brand img {
+	display: inline-block;
+/*    background: red;*/
+	margin-left: -57px;
+}
+.navbar .navbar-nav {
+	margin-top: -30px;
+}
+.navbar .navbar-nav .nav-item{
+    position: relative;
+    transition: all 5s linear;
+    
+}
+
+.navbar .navbar-nav .nav-item a {
+	font-size: 18px;
+	font-weight: 300;
+	color: #222222;
+	padding: 52px 0;
+	padding-right: 43px;
+}
+.navbar .navbar-nav .nav-item:hover>a{
+    color: #a02dd5;
+}
+
+/*submenu start*/
+
+.navbar .navbar-nav .nav-item .submenu {
+	position: absolute;
+	left: 0;
+	top: 130%;
+	width: 200px;
+	background: #f2f1ff;
+	border-bottom: 3px solid #a12dd6;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+.navbar .navbar-nav .nav-item:hover>.submenu {
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.navbar .navbar-nav .nav-item .submenu {
+    
+}
+.navbar .navbar-nav .nav-item .submenu li{
+    
+}
+.navbar .navbar-nav .nav-item .submenu li a {
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	margin-top: 0;
+    transition: all .3s linear;
+}
+
+.navbar .navbar-nav .nav-item .submenu li a:hover {
+	background: #a12dd6;
+	color: #ffffff;
+}
+/*submenu end*/
+
+.navbar .navbar-nav .nav-item .submenu li:last-child a{
+    border-bottom: 0;
+}
+
+
+/* sticky menu css */
+.navigation1.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff !important;
+	z-index: 9999999;
+	border-bottom: 1px solid rgb(25, 26, 31);
+	-webkit-box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+	box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+	-webkit-animation: sticky 2s;
+	animation: sticky 2s;
+}
+
+.navigation1.sticky .navbar-brand img {
+	/* margin-top: 30px; */
+	margin-bottom: -25px;
+}
+.navigation1.sticky .navbar-nav .nav-item a {
+	margin-top: 37px;
+	padding-bottom: 59px;
+}
+@keyframes sticky {
+	0% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%)
+	}
+	
+	100% {
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%)
+	}
+}
+
+/*======== INDEX TWO NAV PART =========*/
+.index_Two_nav.navigation1.sticky{
+	background: #0F1013;
+}
+.indexTwo.indexTwoNav.navigation1.sticky{
+	background: #0F1013;
+
+.indexTwoNav.navigation1.sticky{
+	background: #0F1013 !important;
+}
+
+.indexTwoNav.navbar-brand .nav-item a{
+	color: #ffffff;
+}
+.indexTwoNav.navbar .navbar-nav .nav-item .submenu{
+	background: #333647;
+}
+.indexTwoNav.navbar .navbar-nav .nav-item .submenu li a {
+	border-bottom: 1px solid #444;
+}
+
+
+
+/*===========================
+    3. BANNER CSS 
+===========================*/
+
+
+.banner_area{
+    
+}
+
+.banner_text{
+    
+}
+
+.banner_text h2 {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 200;
+	line-height: 1;
+	margin-bottom: 0;
+}
+.banner_text h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 1;
+}
+/*
+.banner_text p {
+	color: #4f658e;
+	line-height: 26px;
+	margin-top: 14px;
+}
+*/
+.banner_txt br {}
+
+.banner_text a.d-block {
+	color: #999999;
+	font-weight: 300;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+.banner_img{}
+
+.banner_img img {
+	width: 100%;
+}
+.update_title {}
+
+.update_title h5 {
+	margin-bottom: 0;
+	text-transform: capitalize;
+	font-weight: 300;
+	color: #222222;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+.update_news {
+	background: #f8f9fe;
+}
+
+.update_news p {
+	font-weight: 300;
+	color: #444444;
+	padding: 17px;
+}
+
+.cd-words-wrapper b {
+	line-height: 1;
+}
+/*======== INDEX TWO BANNER =========*/
+
+.indexTwoBanner.banner_area {
+	background: -moz-radial-gradient(50% 50%, circle closest-side, rgb(51, 54, 71) 0%, rgb(15, 16, 19) 100%);
+	background: -webkit-radial-gradient(50% 50%, circle closest-side, rgb(51, 54, 71) 0%, rgb(15, 16, 19) 100%);
+	background: -ms-radial-gradient(50% 50%, circle closest-side, rgb(51, 54, 71) 0%, rgb(15, 16, 19) 100%);
+}
+
+/*===========================
+	4. ABOUT AREA CSS
+===========================*/
+
+
+.about_area{
+    
+}
+
+.about_text{
+}
+.about_text .think_text {
+	color: #222222;
+	font-weight: 400;
+}
+
+.about_text p {
+	margin-top: 30px;
+	color: #444;
+	font-weight: 300;
+}
+
+/*table area css start*/
+
+.about_table {
+	margin-top: 31px;
+	height: 290px;
+	border-bottom: 1px solid #ddd;
+}
+.about_table .corona_table {
+	width: 100%;
+}
+.corona_table thead {
+	background: #f2f1ff;
+}
+
+.corona_table thead tr{
+    
+}
+
+.corona_table thead tr th{
+    border-right: 1px solid #ddd;
+    
+}
+.corona_table thead tr th span {
+	font-size: 16px;
+	color: #444;
+	font-weight: 400;
+}
+.corona_table thead tr th:last-child{
+    border: 0;
+}
+
+.col_1 {
+	padding: 18px 0;
+	padding-left: 30px;
+	padding-right: 97px;
+	border-left: 1px solid #f2f1ff;
+}
+.col_2{
+    padding: 0 20px;
+}
+
+.col_3{
+    padding: 0 20px;
+}
+
+.col_4{
+    padding: 0 20px;
+}
+
+/*end of table thead css*/
+
+
+.corona_table tbody {
+	border: 1px solid #ddd;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.corona_table tbody td {
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+
+.corona_table tbody td:first-child{
+    text-align: left;
+}
+.corona_table tbody td:last-child{
+    border: 0;
+}
+
+
+.corona_table tbody td .country_name {
+	font-size: 16px;
+	padding: 10px 0;
+	padding-left: 30px;
+	font-weight: 400;
+}
+
+.corona_table tbody td .count {
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+/*===========================
+	5. SYMPTOMS PART CSS 
+===========================*/
+
+.symptoms_area{
+    
+}
+
+.symptoms_img {
+	padding-top: 22px;
+}
+
+.symptoms_img img{
+    
+}
+
+
+.symptom_contents{
+    position: relative;
+}
+
+.symptom_contents::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 346px;
+    background: #dddddd;
+    left: 50%;
+    top: 96px;
+    transform: translateX(-50%);
+}
+
+.symptom_contents::after{
+    position: absolute;
+    content: '';
+    width: 96%;
+    height: 1px;
+    background: #ddd;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.single_symptom {
+	padding-top: 100px;
+}
+
+.symptom_title{
+    
+}
+
+.symptom_title h3 {
+	text-transform: uppercase;
+	color: #222;
+	font-size: 20px;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+
+.symptom_title h3 span {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.single_symptom p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #444;
+	line-height: 26px;
+	margin-top: 24px;
+}
+
+
+
+/*===========================
+	6. PREVENTION PART CSS
+===========================*/
+#prevention{
+    
+}
+.prevention_area{
+    
+}
+
+.single_prevention {
+	padding-top: 25px;
+}
+.single_prevention .prevention_head{
+    
+}
+.prevention_head{
+    
+}
+.prevention_icon {
+	width: 100px;
+	height: 100px;
+	background: #f2f1ff;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 3px;
+}
+.prevention_icon img{
+    
+}
+.prev_title{
+
+}
+.prev_title h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #222;
+	padding-left: 20px;
+}
+.single_prevention p {
+	font-size: 15px;
+	padding-top: 15px;
+}
+
+
+/*===========================
+7. DOCTOR PART CSS 
+===========================*/
+#doctor{
+    
+}
+
+.doctor_area{
+    
+}
+
+.single_doctor {
+	margin-top: 30px;
+}
+.doctor_img {
+	box-shadow: 0px 5px 140px 60px rgba(0,0,0,.05);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.doctor_img img{
+    width: 100%;
+}
+.doctor_info {
+	text-align: center;
+}
+.doctor_info a {
+	padding: 16px 42px;
+	background: #fff;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #444;
+	transform: translateY(-56%);
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+}
+.doctor_info a i {
+	font-size: 24px;
+	margin-right: 20px;
+}
+.doctor_info h3 {
+	font-size: 20px;
+	color: #444;
+	margin-top: -14px;
+	font-weight: 400;
+}
+.doctor_info p{
+    
+}
+
+
+/*===========================
+	8. FAQ PART CSS 
+===========================*/
+#faq{
+    
+}
+.faq_area {
+	background: #f5f5f5;
+}
+
+.tab_control_wrap {
+	background: #ffffff;
+	box-shadow: 0px 5px 50px 0px rgba(0,0,0,0.7);
+	border-radius: 5px;
+	margin-top: 55px;
+}
+.tab_control_wrap a {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 300;
+	color: #444;
+	padding: 12px 0 12px 20px;
+	margin: 10px;
+	transition: all .3s linear;
+	border-radius: 5px;
+	position: relative;
+}
+
+.tab_control_wrap a:nth-of-type(1)::before{
+	position: absolute;
+	content: '';
+	height: 1px;
+	background: #e6e4ff;
+	left: 20px;
+	top: 61px;
+	right: 20px;
+}
+
+.tab_control_wrap a:nth-of-type(5)::before{
+	position: absolute;
+	content: '';
+	height: 1px;
+	background: #e6e4ff;
+	left: 20px;
+	bottom: 59px;
+	right: 20px;
+}
+.tab_control_wrap a.active{
+	background:green;
+}
+.tab_control_wrap a:hover{
+	background: #444;
+	color: #ffffff;
+	padding-left: 30px;
+	box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+/*tab control css*/
+
+.faq_area .tab-content {
+	margin-top: 55px;
+}
+
+.card.single-card {
+	border: 0;
+	margin: 20px 0px;
+	border-radius: 5px !important;
+	box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.07);
+	background: #fff;
+}
+.single-card .card-header {
+	background: transparent;
+	padding: 0;
+	border: 0;
+	margin: 0 30px;
+}
+.single-card .card-header h2 {
+	font-size: 20px;
+	font-weight: 300;
+	padding: 20px 0;
+	border-bottom: 1px solid #f2f1ff;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	position: relative;
+	color: #4f658e;
+}
+.single-card .card-header h2.collapsed {
+	border-color: transparent;
+	color: #222;
+}
+.single-card .card-header h2 .colap_icon {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(180deg);
+	font-size: 20px;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-moz-transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	-o-transform: translateY(-50%) rotate(180deg);
+}
+
+.single-card .card-header h2.collapsed .colap_icon {
+	transform: translateY(-50%) rotate(0deg);
+	-webkit-transform: translateY(-50%) rotate(0deg);
+	-moz-transform: translateY(-50%) rotate(0deg);
+	-ms-transform: translateY(-50%) rotate(0deg);
+	-o-transform: translateY(-50%) rotate(0deg);
+}
+.single-card .card-body {
+	padding: 25px 30px;
+}
+
+.single-card .card-body p {
+	color: #222222;
+}
+
+
+/*===========================
+	9. DO AND DONT CSS 
+===========================*/
+
+
+
+#do_and_dont{
+    
+}
+
+.do_and_dont_img{
+    
+}
+.do_and_dont_img img{
+    
+}
+.do_and_dont_content{
+    
+}
+.to-do-list{
+    
+}
+.to_do_title {
+	margin-bottom: 30px;
+}
+
+
+.tick-mark {
+	background: green;
+	color: #fff;
+	padding:  3px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+.to_do_title .tick-mark {
+	font-size: 16px;
+	padding:  3px;
+}
+.todo_head{
+    
+}
+.todo_head h4 {
+	font-size: 20px;
+	margin-bottom: 0;
+	text-transform: capitalize;
+	color: #4c9e4a;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.to-do-list ul {
+    
+}
+.to-do-list ul li {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.to-do-list ul li .tick-mark {
+	margin-right: 10px;
+}
+
+.to-do-list ul li .list_items {
+	font-size: 16px;
+	font-weight: 300;
+	color: #444;
+}
+
+
+/*===========================
+    10.FOOTER PART CSS 
+===========================*/
+.footer_area{
+	background: #141414;
+}
+
+.footer_widget{}
+
+.footer_widget .widget_title{}
+
+.footer_widget .widget_title h3 {
+	color: #fff;
+	font-size: 24px;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+.footer_cont{}
+
+.footer_cont .single_cont {
+	display: flex;
+	align-items: center;
+}
+
+.footer_cont .single_cont .cont_icon{}
+
+.footer_cont .single_cont .cont_icon i {
+	display: inline-block;
+	background: #fff;
+	color: #444;
+	font-size: 24px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	transition: all .3s linear;
+}
+.single_cont:hover .cont_icon i{
+	background: #a02cd5;
+;
+	color: #fff;
+}
+
+.footer_cont .cont_link {
+	margin-left: 20px;
+}
+
+
+.footer_cont .cont_link a {
+	display: flex;
+	color: #f1f1f1;
+	font-size: 18px;
+	font-weight: 300;
+	transition: all .3s linear;
+}
+
+.cont_link a:hover{
+	color: #a02cd5;
+	padding-left: 5px;
+}
+
+.footer_link_lists{}
+
+.footer_link_lists ul {
+	margin-top: 25px;
+}
+.footer_link_lists ul li{}
+
+.footer_link_lists ul li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	padding-bottom: 10px;
+	transition: all .3s linear;
+}
+.footer_link_lists ul  a:hover{
+	color: #a02cd5;
+	padding-left: 5px;
+}
+
+/*===========================
+	11.COPYRIGHT PART CSS 
+===========================*/
+
+.copyright_area{
+	background: #141414;
+}
+
+.copyright_text{
+	border-top: 1px solid #2c2c2c;
+}
+
+.copyright_text p {
+	color: #ffff;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1;
+	padding: 33px;
+}
+
+/*===========================
+	12.BACK-TO-TOP PART CSS 
+===========================*/
+.back-to-top {
+	position: fixed;
+	background: #a12dd6;
+	width: 40px;
+	height: 40px;
+	z-index: 99999999;
+	right: 40px;
+	bottom: 40px;
+	font-size: 28px;
+	text-align: center;
+	line-height: 34px;
+	text-transform: capitalize;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: 400;
+	border: 1px solid transparent;
+	display: none;
+	overflow: hidden;
+}
+
+.back-to-top::before{
+	position: absolute;
+	content: '';
+	left:-10px;
+	top: -10px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: all .3s linear;
+	z-index: -9;
+
+}
+.back-to-top:hover::before{
+	transform: scale(1);
+}
+.back-to-top:hover{
+	border-color: #a12dd6;
+	color: #a12dd6;
+	background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
